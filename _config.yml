@@ -3,7 +3,7 @@ title: NetCom Satelital
 email: info@netcomsatelital.com.ar
 description: Soluciones integrales de comunicaciones para su empresa.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://netcomsatelital.github.io" # the base hostname & protocol for your site
+url: "http://www.netcomsatelital.com.ar" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
