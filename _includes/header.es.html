@@ -1,5 +1,5 @@
 <div id="langs">
-  <a href="{% if page.lang_en %}{{ page.url | replace_first: "/es/", "" | prepend: "/en/" | prepend: site.baseurl }}{% else %}{{ "/en/index.html" | prepend: site.baseurl }}{% endif %}"{% unless page.lang_en %} class="unavailable"{% endunless %}><img src="{{ "/images/en/flag.png" | prepend: site.baseurl }}">&nbsp;<span>English</span></a>
+  <a href="{% if page.lang_en %}{{ page.url | replace_first: "/es/", "" | prepend: "/en/" | prepend: site.baseurl }}{% else %}{{ "/en/index.html" | prepend: site.baseurl }}{% endif %}"{% unless page.lang_en %} class="unavailable"{% endunless %}><img src="{{ "/images/en/flag.png" | prepend: site.baseurl }}" alt="English">&nbsp;<span>English</span></a>
 </div><!-- langs -->
 <div id="header">
   <a href="{{ site.url }}"><img src="{{ "/style/logo_netcom.png" | prepend: site.baseurl }}" width="95px" height="70px" alt="NetCom Satelital S.A."></a><span class="slogan">Conexi&oacute;n sin fronteras</span>
