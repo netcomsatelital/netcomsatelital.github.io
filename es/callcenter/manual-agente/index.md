@@ -53,13 +53,13 @@ En la nueva pantalla complete los siguientes campos:
 
 ![Pantalla de marcado](go003.png)
 
-Presione el enlace **Dial now** para que el sistema comience el llamado telefónico.  Se pasará al formulario de datos de la persona.  **No** escuchará ningún tono mientras se establece la llamada.
+Presione el enlace **Dial now** para que el sistema comience el llamado telefónico.  Se pasará al formulario de datos de la persona.  **No** escuchará ningún tono mientras se establece la llamada.  Una vez establecida la llamada, el formulario de la pantalla principal mostrará los datos de ese contacto si es que están cargados.
 
-![Grabar datos y cerrar formulario](go004-btn_submit_close.png)
+![Grabar datos y cerrar formulario](go017-editboxes.png)
 
-En este formulario se deben llenar los datos requeridos.  Una vez completados se debe presionar el botón **SUBMIT** de la parte inferior.  Dependiendo del tamaño de la pantalla, el formulario puede aparecer incompleto y quizá sea necesario desplazar la pantalla para ver el resto.  Luego de grabar los datos, el formulario volverá al principio y se mostrará la leyenda **Data Changes Accepted**.
+Para cambiar o agregar datos se debe pulsar sobre las áreas a la derecha de los títulos ("Nombre", "Apellido", "Dirección", etc., resaltadas en rojo en la imagen), tras lo cual aparecerá el cursor que permite editar el texto en el lugar.  Los espacios para editar texto *no* tienen ningún formato especial, ni recuadro, pero son editables cuando se les pulsa encima.  Los datos se guardan automáticamenta al finalizar la llamada.
 
-Luego cerrar el formulario con el botón **close** (de color rojo, arriba a la derecha), y presionar el botón **HANG UP** para cortar la llamada y pasar al formulario de disposición.
+Para terminar la llamada se debe presionar el botón **HANG UP**, tras lo cual se pasará al *formulario de disposición de llamada*.
 
 ![Cortar la llamada](go010-btn_hangup.png)
 
