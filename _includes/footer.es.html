@@ -1,7 +1,35 @@
-<div id="footer">
-  {% comment %}
-  <a href="sitemap.html">Mapa del sitio</a>
-  &nbsp; | &nbsp;
-  {% endcomment %}
-  <a href="{{ site.url }}">Copyright &copy; 2004-2015 NetCom Satelital S.A</a>
-</div><!-- footer -->
+      <section class="linkfarm">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <h2>VoIP</h2>
+              <ul>
+                <li><a href="{{ "/es/voip/carriers.html" | prepend:site.baseurl }}">Terminaci&oacute;n wholesale</a></li>
+                <li><a href="{{ "/es/voip/resellers.html" | prepend:site.baseurl }}">Terminaci&oacute;n retail</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <h2>Servicios</h2>
+              <ul>
+                <li><a href="{{ "/es/satelital" | prepend:site.baseurl }}">Satelital</a></li>
+                <li><a href="{{ "/es/streaming/audio.html" | prepend:site.baseurl }}">Streaming de audio</a></li>
+                <li><a href="{{ "/es/streaming/video.html" | prepend:site.baseurl }}">Streaming de video</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <h2>Telem&aacute;rketing</h2>
+              <ul>
+                <li><a href="{{ "/es/callcenter" | prepend:site.baseurl }}">Call centers</a></li>
+                <li><a href="http://www.fonobot.com" target="_new">Fonobot</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <h2>Recursos</h2>
+              <ul>
+                <li><a href="{{ "/es/tutoriales" | prepend:site.baseurl }}">Tutoriales</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <p class="footer-copyright">Copyright &copy; 2004-2018 <a href="{{ site.url }}">NetCom Satelital S.A.</a> Todos los derechos reservados <span class="separator">|</span> <a href="{{ "/es/privacidad" | prepend:site.baseurl }}">Pol&iacute;tica de privacidad</a></p>

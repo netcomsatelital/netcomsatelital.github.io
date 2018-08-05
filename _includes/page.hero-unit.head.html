@@ -1,0 +1,8 @@
+{% if include.hero_image %}
+    <style type="text/css">
+      header.masthead {
+        {% if include.hero_image %}background-image: url({{ include.hero_image }});{% endif %}
+        {% if include.hero_bgcolor %}background-color: {{ include.hero_bgcolor }};{% endif %}
+      }
+    </style>
+{% endif %}

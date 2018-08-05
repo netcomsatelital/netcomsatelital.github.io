@@ -1,0 +1,16 @@
+    <section class="quadbox{% if include.classname %} {{ include.classname }}{% endif %}">
+      <div class="container">
+        <div class="row">
+{% assign lang_data = site.data.langs | where:"id",page.lang | first %}{% for quad in include.item_list %}
+          <div class="{{ include.col_classname | default:"col-md-4 col-xs-12" }}">
+            <div class="quadbox-box">
+              <img class="quadbox-image" src="{{ quad.image | prepend:"/img/" | prepend:site.baseurl }}">
+              <h1 class="quadbox-heading">{{ quad.title }}</h1>
+              <div class="quadbox-content">{{ quad.body }}</div>
+              <p class="quadbox-readmore"><a class="btn btn-default" href="{{ quad.link | prepend:site.baseurl }}">{{ lang_data.label_readmore }}</a></p>
+            </div>
+          </div>
+{% endfor %}
+        </div>
+      </div>
+    </section>

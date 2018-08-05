@@ -1,0 +1,20 @@
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+      <div class="container">
+        <a class="navbar-brand" href="{{ site.url | append:site.baseurl | append:"/" | append:page.lang }}"><span>{{ site.title }}</span></a>
+        <div class="navbar-text navbar-brand-slogan d-none d-sm-block">{{ include.slogan }}</div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="{{ include.label_nav }}">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item{% if page.menu == 'acercade' %} active{% endif %}">
+              <a class="nav-link" href="{{ "/acercade/index.html" | prepend:page.lang | prepend:"/" | prepend:site.baseurl }}">{{ include.label_nav_acercade }}</a>
+            </li>
+            <li class="nav-item{% if page.menu == 'contacto' %} active{% endif %}">
+              <a class="nav-link" href="{{ "/contacto.html" | prepend:page.lang | prepend:"/" | prepend:site.baseurl }}">{{ include.label_nav_contacto }}</a>
+            </li>
+{% include header.langs.html %}
+          </ul>
+        </div>
+      </div>
+    </nav>

@@ -1,0 +1,14 @@
+{% if include.hero_heading %}
+    <header class="masthead">
+      <div class="masthead-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p class="masthead-heading">{{ include.hero_heading }}</p>
+              <p class="masthead-subheading">{% if include.hero_subheading %}{{ include.hero_subheading }}{% else %}NetCom Satelital<br>{% if page.lang == 'en' %}The future right here, right now{% else %}El futuro de las comunicaciones, hoy{% endif %}{% endif %}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+{% endif %}

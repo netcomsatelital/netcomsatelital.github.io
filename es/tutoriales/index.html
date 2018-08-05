@@ -1,0 +1,11 @@
+---
+title: Tutoriales
+---
+<ul>
+{% assign tutorial_list = site.pages | where:"menu","tutorial" | sort:"title" %}
+{% for tutorial in tutorial_list %}
+{% if tutorial.path != page.path %}
+  <li><a href="{{ tutorial.url }}">{{ tutorial.title }}</a></li>
+{% endif %}
+{% endfor %}
+</ul>

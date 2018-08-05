@@ -1,10 +1,24 @@
 ---
 title: Streaming en Flash
 menu: streaming/video-flash
+layout: article
 ---
-<h1>{{ page.title }}</h1>
+<p>La tecnolog&iacute;a <strong>Flash</strong> permite incrustar contenidos de audio y video directamente en una p&aacute;gina web.
+Debido a la popularidad de esta plataforma, es muy probable que el usuario ya tenga instalado el plugin necesario para ver el contenido,
+con lo cual se evita tener que seguir instrucciones adicionales para instalar otros programas.</p>
+ 
+<p>El <strong>streaming en vivo</strong> abre la posibilidad de entregar contenidos en
+<strong>tiempo real</strong> de una manera simple y efectiva, sin realizar operaciones complejas
+y sin siquiera abandonar su sitio web. Esto lo hace ideal para aplicaciones como:</p>
+<ul>
+  <li>Conferencias</li>
+  <li>Cursos a distancia</li>
+  <li>Cobertura de eventos</li>
+  <li>Flashes informativos</li>
+</ul>
+<p>A modo de ejemplo, tenemos el agrado de presentar el video clip de <em>"Hasta vos"</em>, primer corte difusi&oacute;n del &aacute;lbum "Sin ser quien soy" de <a href="http://www.tutiruggiero.com.ar/" target="_new">"Tuti" Ruggiero</a>.</p>
 <script type="text/javascript" src="{{ "/js/swfobject.js" | prepend: site.baseurl | site.url }}"></script>
-<div id="mediaspace" style="margin-left:2em;text-align:center;border:1px solid #DDD;width:430px; height:330px;-moz-border-radius:8px; float:right;"><embed type="application/x-shockwave-flash" src="{{ "/swf/fwplayer.swf" | prepend: site.baseurl }}" width="400" height="327" style="undefined" id="mpl" name="mpl" quality="high" allowfullscreen="true" allowscriptaccess="always" wmode="opaque" flashvars="author=Tuti Ruggiero&amp;description=Hasta Vos&amp;file={{ "/swf/video-tuti-hasta-vos.flv" | prepend: site.baseurl }}&amp;image=http://www.tutiruggiero.com.ar/img/hastavos_02.jpg&amp;backcolor=FFFFFF&amp;screencolor=FFFFFF&amp;autostart=true&amp;bufferlength=20&amp;controlbar=none"></div>
+<div id="mediaspace" style="margin-left:2em;text-align:center;border:1px solid #DDD;width:430px; height:330px;-moz-border-radius:8px;margin-left:auto;margin-right:auto;"><embed type="application/x-shockwave-flash" src="{{ "/swf/fwplayer.swf" | prepend: site.baseurl }}" width="400" height="327" style="undefined" id="mpl" name="mpl" quality="high" allowfullscreen="true" allowscriptaccess="always" wmode="opaque" flashvars="author=Tuti Ruggiero&amp;description=Hasta Vos&amp;file={{ "/swf/video-tuti-hasta-vos.flv" | prepend: site.baseurl }}&amp;image=http://www.tutiruggiero.com.ar/img/hastavos_02.jpg&amp;backcolor=FFFFFF&amp;screencolor=FFFFFF&amp;autostart=true&amp;bufferlength=20&amp;controlbar=none"></div>
 <script type="text/javascript">
  var so = new SWFObject('{{ "/swf/fwplayer.swf" | prepend: site.baseurl }}','mpl','400','327','9');
  so.addParam('allowfullscreen','true');
@@ -21,17 +35,3 @@ menu: streaming/video-flash
  so.addVariable('controlbar','none');
  so.write('mediaspace');
 </script>
-<p>La tecnolog&iacute;a <strong>Flash</strong> permite incrustar contenidos de audio y video directamente en una p&aacute;gina web.
-Debido a la popularidad de esta plataforma, es muy probable que el usuario ya tenga instalado el plugin necesario para ver el contenido,
-con lo cual se evita tener que seguir instrucciones adicionales para instalar otros programas.</p>
- 
-<p>El <strong>streaming en vivo</strong> abre la posibilidad de entregar contenidos en
-<strong>tiempo real</strong> de una manera simple y efectiva, sin realizar operaciones complejas
-y sin siquiera abandonar su sitio web. Esto lo hace ideal para aplicaciones como:</p>
-<ul>
-  <li>Conferencias</li>
-  <li>Cursos a distancia</li>
-  <li>Cobertura de eventos</li>
-  <li>Flashes informativos</li>
-</ul>
-<p>A modo de ejemplo, tenemos el agrado de presentar el video clip de <em>"Hasta vos"</em>, primer corte difusi&oacute;n del &aacute;lbum "Sin ser quien soy" de <a href="http://www.tutiruggiero.com.ar/" target="_new">"Tuti" Ruggiero</a>.</p>

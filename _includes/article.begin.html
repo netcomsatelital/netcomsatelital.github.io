@@ -1,0 +1,22 @@
+<article{% if include.classname %} class="{{ include.classname }}"{% endif %}>
+{% if include.hero_heading %}
+  <header class="article-main-title">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <h1>{{ page.title }}</h1>
+        </div><!-- .col -->
+      </div><!-- .row -->
+    </div><!-- .container -->
+  </header>
+{% else %}
+  <header class="hero-title">
+    <div class="container">
+      <h1>{{ page.title }}</h1>
+    </div>
+  </header>
+{% endif %}
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <section class="article-content">

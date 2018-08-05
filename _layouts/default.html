@@ -1,14 +1,8 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="{{ page.lang }}">
-  {% include head.html %}
-<body id="body">
-  <div id="container">
-    {% include header.{{ page.lang }}.html %}
-    <div id="content">
-      {{ content }}
-      <div id="cleaner"></div>
-    </div><!-- content -->
-  </div><!-- container -->
-  {% include footer.{{ page.lang }}.html %}
-</body>
-</html>
+{% include layout.top.html
+  hero_image=page.hero_image
+  hero_bgcolor=page.hero_bgcolor
+  hero_heading=page.hero_heading
+  hero_subheading=page.hero_subheading
+%}
+{{ content }}
+{% include layout.bottom.html %}

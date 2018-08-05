@@ -1,0 +1,10 @@
+{% include layout.top.html
+  hero_image="/img/common/hero/callcenter.jpg"
+  hero_heading="Linea directa con sus clientes"
+%}
+{% include article.begin.html hero_heading=true %}
+{{ content }}
+{% include article.sidebar.begin.html %}
+{% include callcenter/menu.es.html %}
+{% include article.end.html %}
+{% include layout.bottom.html %}

@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+
+html, body, table {
+ font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header.masthead .masthead-content .masthead-heading,
+header.masthead .masthead-content .masthead-subheading,
+nav,
+footer,
+.article-sidebar {
+ font-family: 'Open Sans', sans-serif;
+}
+
+article ul {
+ list-style-image: url(btn_link2.gif);
+ margin-top: 2ex;
+ margin-bottom: 2ex;
+}
+
+article li {
+ margin-top: 2ex;
+ margin-bottom: 2ex;
+}
+
+article li:first-child {
+ margin-top: 0;
+}
+
+article li:last-child {
+ margin-bottom: 0;
+}
+
+dt, dd {
+ padding: 1rem 2rem;
+}
+
+dt {
+ margin-top: 2rem;
+ font-weight: bold;
+ background-color: #F6F6F6;
+ border-radius: 8pt;
+}
+
+dd {
+ margin-top: 1rem;
+ margin-bottom: 1rem;
+}
+
+header.masthead {
+ color: white;
+ position: relative;
+ overflow: hidden;
+ background-color: black;
+ background-image: url(../img/common/hero/index.jpg);
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-size: cover;
+}
+
+header.masthead .masthead-content {
+ z-index: 1;
+ position: relative;
+ padding-top: 2rem;
+ padding-bottom: 2rem;
+ background: rgba(0,0,0, 0.75);
+}
+
+header.masthead .masthead-content .masthead-heading,
+header.masthead .masthead-content .masthead-subheading {
+ margin-top: 0;
+ margin-bottom: 0;
+ line-height: 130%;
+ text-shadow: 0 0 5pt black, 0 0 1pt black, 0 0 1pt black, 0 0 1pt black;
+}
+
+header.masthead .masthead-content .masthead-heading {
+ font-size: 2rem;
+ min-height: 8rem;
+ margin-bottom: 2rem;
+}
+
+header.masthead .masthead-content .masthead-subheading {
+ font-size: 1.25rem;
+ font-style: italic;
+}
+
+nav .navbar-brand {
+ display: block;
+ width: 95px;
+ height: 70px;
+ background: transparent url(/css/logo.png) no-repeat;
+}
+
+nav .navbar-brand span {
+ display: none;
+}
+
+nav .navbar-nav .nav-link,
+nav .navbar-nav .dropdown .nav-link:hover {
+ border-bottom: 2px solid transparent;
+ transition: border-bottom .35s ease-in-out, color .35s ease-in-out;
+}
+
+nav .navbar-nav .nav-link:hover {
+ color: #06C !important;
+ border-bottom: 2px solid #06C;
+}
+
+nav .navbar-nav .active .nav-link {
+ color: black !important;
+}
+
+nav .navbar-brand-slogan {
+ font-style: italic;
+ font-family: serif;
+}
+
+
+.footer {
+ text-align: center;
+ font-size: 0.75rem;
+ color: white;
+ background: #201F26;
+ margin: 3rem 0 0;
+ padding: 1rem 0;
+ letter-spacing: 0.25ex;
+}
+
+.footer p {
+ margin-top: 2ex;
+ margin-bottom: 2ex;
+}
+
+.footer a {
+ color: white;
+ text-transform: none;
+}
+
+.linkfarm {
+ text-align: left;
+ letter-spacing: 0.2ex;
+ margin-bottom: 3rem;
+}
+
+.linkfarm h2 {
+ font-size: 0.9rem;
+ font-weight: bold;
+ margin-top: 2rem;
+}
+
+.linkfarm ul {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+}
+
+.linkfarm li {
+ margin-top: 0.75ex;
+ margin-bottom: 0.75ex;
+}
+
+.quadbox {
+ margin-top: 1rem;
+ margin-bottom: 1rem;
+ text-align: center;
+}
+
+.quadbox .quadbox-box {
+ margin: 4rem 0;
+}
+
+.quadbox .quadbox-image {
+ max-width: 100%;
+ object-fit: contain;
+ margin-bottom: 1.5rem;
+ border-radius: 4px;
+}
+
+.quadbox h1 {
+ margin-bottom: 2rem;
+ font-size: 1rem;
+ font-weight: bold;
+ letter-spacing: 0.075em;
+ text-transform: uppercase;
+ color: #06C;
+ margin: 0;
+ border-bottom: none;
+}
+
+.quadbox h1::after {
+ display: block;
+ content: " ";
+ width: 20%;
+ border: 2px solid #FF7200;
+ margin: 1.5rem auto;
+ border-radius: 2px;
+}
+
+.quadbox .quadbox-content {
+ min-height: 4rem;
+}
+
+.quadbox .quadbox-readmore {
+ margin: 2rem 0 0;
+}
+
+
+.btn {
+ padding: 1.5ex 2.5em !important;
+ background-color: transparent;
+ border-width: 1pt;
+ font-size: 0.9rem;
+}
+
+.btn-default, .btn-default:link, .btn-default:visited {
+ border: 1pt solid #06C;
+ color: #06C;
+}
+
+.btn-default:hover {
+ background-color: #06C;
+ color: white;
+}
+
+.hero-title {
+ background-color: #06C;
+ background: radial-gradient(#06C, #039);
+ padding: 7rem 0;
+ margin: 0 0 2rem;
+ text-align: center;
+}
+
+.hero-title h1 {
+ margin: 0;
+ color: white;
+}
+
+.article-main-title h1 {
+ margin: 6rem 0 1rem;
+ padding: 0;
+ font-weight: bold;
+}
+
+.article-content {
+ line-height: 200%;
+}
+
+.article-content p {
+ margin-top: 1.5rem;
+ margin-bottom: 1.5rem;
+}
+
+.article-content h2 {
+ margin-top: 4rem;
+ margin-bottom: 1rem;
+}
+
+.article-sidebar {
+ font-size: 0.9rem;
+ margin-top: 4rem;
+}
+
+.quadbox.clientes .quadbox-box {
+ background-color: #EFEFEF;
+ border-radius: 4pt;
+ padding: 4ex;
+ height: 12rem;
+ margin-top: 1rem !important;
+ margin-bottom: 1rem !important;
+}
+
+img.float-left,
+img.float-right {
+ margin-top: 1rem;
+ margin-bottom: 1rem;
+}
+
+img.float-right {
+ margin-left: 1rem;
+}
+
+img.float-left {
+ margin-right: 1rem;
+}
+
+.tutorial1 .article-content img {
+ max-width: 100%;
+ margin-left: auto;
+ margin-right: auto;
+ display: block;
+}
+
+
+@media (min-width: 992px) {
+  header.masthead .masthead-content {
+   background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0) 75%);
+  }
+
+  .article-sidebar {
+   border-left: 1px solid #DDD;
+   padding: 2ex 0 2ex 2em;
+   margin-top: 1.5rem;
+  }
+
+  .article-sidebar h2 {
+   font-weight: bold;
+   font-size: 0.9rem;
+  }
+
+  .article-sidebar ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+  }
+
+  .article-sidebar li, .article-sidebar li:first-child {
+   margin: 2ex 0;
+  }
+}
+

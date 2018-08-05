@@ -1,0 +1,12 @@
+{% assign page_lang = site.data.langs | where:"id",page.lang | first %}
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="{{ page.lang | prepend:"/img/" | append:"/flag.png" | prepend:site.baseurl }}" alt="{{ page_lang.label }}" title="{{page_lang.label }}">
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+{% assign current_lang_path = page.lang | append:"/" %}{% for lang in site.data.langs %}{% if lang.id != page.lang %}{% assign translation_lang_path = lang.id | append:"/" %}{% assign translation_path = page.path | replace_first:current_lang_path,translation_lang_path %}{% assign translation_exists = site.pages | where:"path",translation_path | size | round %}
+                <a class="dropdown-item{% if translation_exists == 0 %} disabled{% endif %}" href="{% if translation_exists > 0 %}{{ page.url | replace_first:current_lang_path,translation_lang_path | prepend:site.baseurl }}{% else %}#{% endif %}"><img src="{{ translation_lang_path | prepend:"/img/" | append:"flag.png" | prepend:site.baseurl }}">&nbsp;{{ lang.label }}</a>
+{% endif %}{% endfor %}
+              </div>
+            </li>

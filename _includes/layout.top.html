@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+  <head>
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="Content-Language" content="{{ page.lang }}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend:site.baseurl }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ "/css/main.css" | prepend:site.baseurl }}">
+    <link rel="shortcut icon" type="image/ico" href="{{ "/css/favicon.ico" | prepend:site.baseurl }}">{%
+  include page.hero-unit.head.html hero_image=include.hero_image hero_bgcolor=include.hero_bgcolor %}{%
+  if page.extra_header %}{{ page.extra_header }}{% endif
+%}  </head>
+  <body>
+{%
+  include header.{{ page.lang }}.html
+%}{%
+  include page.hero-unit.body.html hero_heading=include.hero_heading hero_subheading=include.hero_subheading
+%}

@@ -1,11 +1,6 @@
-<div id="langs">
-  <a href="{% if page.lang_en %}{{ page.url | replace_first: "/es/", "" | prepend: "/en/" | prepend: site.baseurl }}{% else %}{{ "/en/index.html" | prepend: site.baseurl }}{% endif %}"{% unless page.lang_en %} class="unavailable"{% endunless %}><img src="{{ "/images/en/flag.png" | prepend: site.baseurl }}" alt="English">&nbsp;<span>English</span></a>
-</div><!-- langs -->
-<div id="header">
-  <a href="{{ site.url }}"><img src="{{ "/style/logo_netcom.png" | prepend: site.baseurl }}" width="95px" height="70px" alt="NetCom Satelital S.A."></a><span class="slogan">Conexi&oacute;n sin fronteras</span>
-</div><!-- header -->
-<div id="nav">
-  <a href="{{ "/es/index.html" | prepend: site.baseurl }}"{% if page.menu == 'index' %} class="actual"{% endif %}>Inicio</a>
-  <a href="{{ "/es/acercade/index.html" | prepend: site.baseurl }}"{% if page.menu == 'acercade' %} class="actual"{% endif %}>Qui&eacute;nes somos</a>
-  <a href="{{ "/es/contacto.html" | prepend: site.baseurl }}"{% if page.menu == 'contacto' %} class="actual"{% endif %}>Contacto</a>
-</div><!-- nav -->
+{% include header.html
+  slogan="Conexi&oacute;n sin fronteras"
+  label_nav="Navegaci&oacute;n"
+  label_nav_acercade="Qui&eacute;nes somos"
+  label_nav_contacto="Contacto"
+%}
